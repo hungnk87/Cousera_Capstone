@@ -59,7 +59,7 @@ The dataframe which contains venues of suburbs in the region was grouped by each
 
 ![Clusters](https://www.dropbox.com/s/wo50wxuyxkufqyi/4-Clusters.png?raw=1 "Clusters of Suburbs") 
 
-Figure 4. Map of City of Newcastle with six clusters of suburbs
+Figure 4. Map of City of Newcastle with six clusters of suburbs.
 
 Based on my own judgement and experience living in Newcastle, I am surprised by how good the results yielded by the algorithm. It also proves that data generated from FourSquare are adequate. The whole process helps me to narrow down the list of potential suburbs that meet my criteria. 
 
@@ -67,12 +67,29 @@ Cluster 2 and 5 include those suburbs which are far away from the city centre. T
 
 Cluster 0 includes 8 suburbs and Cluster 4 includes 13 suburbs located in the north western part of the City of Newcastle. The areas are popular among students who are studying in the Callaghan campus at the University of Newcastle. The most popular venues in these areas are convenience stores, supermarkets, coffee shop and gas stations. I consider the suburbs in the two clusters are better than the two previous ones. 
 
-The last two, cluster 1 and cluster 3, cover the suburbs which I prefer to relocate in the future. The suburbs have more dynamic lifestyle in which we as family can enjoy and further understand more local culture. The suburbs are close to beach, pool area. There are lots of park and playgrounds nearby for children. People living in these suburbs can also easily access to multiple facilities such as gym, grocery, supermarket, cafe, coffee shop and range of restaurants. In certain suburbs, multiplex for accommodation is also identify popular which give varying options to live with competitive prices. 
+The last two, cluster 1 and cluster 3, cover the suburbs which I prefer to relocate in the future. The suburbs have more dynamic lifestyle in which we as family can enjoy and further understand more local culture. The suburbs are close to beach, pool area. There are lots of park and playgrounds nearby for children. People living in these suburbs can also easily access to multiple facilities such as gym, grocery, supermarket, cafe, coffee shop and range of restaurants. In certain suburbs, multiplex for accommodation is also identify popular which give varying options to live with competitive prices. Suburbs of cluster 1 and 3 are then combined together with most 10 common venues are stored in a dataframe to further examine. 
 
-Suburbs of cluster 1 and 3 are then combined together with most 10 common venues are stored in a dataframe to further examine. 
+**Thirdly**, the shapefile containing spatial data of the whole state of NSW was read into a GeoDataFrame format. All suburbs of City of Newcastle were chosen and drawn a quick plot in Figure 5. 
 
+![NewBoundaries](https://www.dropbox.com/s/a4w1bopo6fi4vg6/5-NewBoundaries.png?raw=1 "Suburb Boundaries") 
 
+Figure 5. Suburb-level map with boundaries in City of Newcastle.
 
+The list of neighbors of each suburbs were determined by those sharing the same border. Please note each suburb was presented as a polygon forming by lines connected by points. Each point was stored in the shapefile format. The first 5 suburbs with points forming its polygon and the list of corresponding neighbours are presented in Figure 6. 
+
+![Neighbours](https://www.dropbox.com/s/vblg5y5zu0lwal3/6-SuburbNeighbours.png?raw=1 "Suburb Neighbours") 
+
+Figure 6. List of neighbours of the first five suburbs. 
+
+With the collected data of property prices of 28 out of 51 suburbs in the City of Newcastle, I calculated the missing value based on the previously mentioned assumption. The most important factor is the list of neighbours which we have already identified. The data interpolation was done in a while loop until all the data was filled. Figure 7 shows the first five rows of the original data while Figure 8 shows the ones after the process of interpolation. 
+
+![OriginalPrices](https://www.dropbox.com/s/lo939spldd6mi1y/7-OriginalPrice.png?raw=1 "Original Prices") 
+
+Figure 7. First five rows of the original property prices.
+
+![ProcessedPrices](https://www.dropbox.com/s/y3je1eiecgjjo89/8-ProcessedPrice.png?raw=1 "Processed Prices") 
+
+Figure 8. First five rows of the property prices after being interpolated.
 
 
 
