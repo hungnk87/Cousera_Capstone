@@ -40,7 +40,7 @@ Fourthly, I need to extract the complete list of all primary schools in every su
 
 Living in Australia, I found the major proportion of living cost comes from rent. To my surprise, there is no complete data of property price in every suburb in the City of Newcastle. 
 
-![suburb](https://www.dropbox.com/s/g9by7k8m310vdty/1-Suburbs.png?dl=0 "Suburbs in Newcastle")
+![suburb](https://www.dropbox.com/s/g9by7k8m310vdty/1-Suburbs.png?raw=1 "Suburbs in Newcastle")
 
 Based on my own judgement and experience living in Newcastle, I am surprised by how good the results yielded by the algorithm. It also proves that data generated from FourSquare are adequate. The whole process helps me to narrow down the list of potential suburbs that meet my criteria. 
 
