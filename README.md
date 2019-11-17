@@ -40,11 +40,14 @@ The list of the sources of data and short explanation are provided as follows:
 **Firstly**, I achieved the dataframe containing name of suburb, corresponding postcode, latitude and longitude of 51 suburbs in the City of Newcastle. The first five rows of the dataframe is shown in Figure 1. 
 
 ![Suburb](https://www.dropbox.com/s/g9by7k8m310vdty/1-Suburbs.png?raw=1 "Suburbs in Newcastle")
+
 Figure 1. First five suburbs in the City of Newcastle. 
 
 Based on the generated coordinate of each suburb and postcode, I plot the map of the City of Newcastle with each marker representing each postcode suburb in Figure 2. Please note that there are several suburbs assigned with the same postcode. 
 
-![NewMap](https://www.dropbox.com/s/gus61m77kaneyix/2-NewcastleMap.png??raw=1 "Map of Newcastle") 
+![NewMap](https://www.dropbox.com/s/gus61m77kaneyix/2-NewcastleMap.png?raw=1 "Map of Newcastle") 
+
+Figure 2. Map of City of Newcastle with suburbs. 
 
 **Secondly**, I got the 
 
