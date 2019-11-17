@@ -91,7 +91,24 @@ Figure 7. First five rows of the original property prices.
 
 Figure 8. First five rows of the property prices after being interpolated.
 
+**Lastly**, I collected a complete list of primary schools and their ratings with the use of selenium package. Instead of typing each suburb name in the search box to achieve the list of schools in that area, I created an automation process to save time and reduce manual errors. The first five schools in the list are shown in Figure 9. 
 
+![Schools](https://www.dropbox.com/s/kue372ajl1xewo4/9-PrimarySchools.png?raw=1 "Primary Schools") 
+
+Figure 9. The first five out of 60 schools in the City of Newcastle.
+
+Since I prefer to live in those suburbs belonging to cluster 1 and 3 above, I further decide to chose in the suburb that has median property price less than A$650k and the rating of the school in that area is equal or above 90 (out of 100). I apply the conditions and merge relevant dataframes. The result table is shown in Figure 10. 
+
+![Results](https://www.dropbox.com/s/zsj4ztt8gly3x5s/10-Results.png?raw=1 "Results") 
+
+Figure 10. List of suburbs that meets my criteria. 
+
+I further closely examine the result and prioritize the suburbs I would like to move in in the near future. 
+1. Tighes Hill
+2. Kotara
+3. Adamstown
+4. New Lambton
+5. Hamilton
 
 
 
