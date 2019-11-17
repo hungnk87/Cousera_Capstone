@@ -1,6 +1,6 @@
 # Applied IBM Data Science Capstone Project - The Battle of Neighborhoods (Week 2)
 
-### Khanh Hung Nguyen, PhD candidate in Computer Science at the University of Newcastle, Australia
+### Khanh Hung Nguyen, PhD candidate in Computer Science, University of Newcastle, Australia
 
 ## 1. Introduction 
 
@@ -24,23 +24,31 @@ The list of the sources of data and short explanation are provided as follows:
 
 ## 3. Methodology
 
-Firstly, I need to have a list of suburbs in the City of Newcastle, the corresponding postcode and coordinates (latitude and longitude). 
+**Firstly**, I need to have a list of suburbs in the City of Newcastle, the corresponding postcode and coordinates (latitude and longitude). 
 - I extracted the names of 51 suburbs in the area from the Wikipedia page. 
 - Following the second link in the Data section, I downloaded the SQL file, imported to mySQL workbench then run the script to generate the data. The data was then exported to a CSV file to have easy access in the future. The name of each suburb in the City of Newcastle with the state of New South Wales was matched with the corresponding postcode by merging the two relevant dataframes. For the coordinates in the provided data, I tested and found the location of certain suburbs (including some in the City of Newcastle) are totally wrong and misleading, so I decided not to use the coordinates data in the second link.
 - I generate the coordinates location of 51 suburbs in the City of Newcastle with the package geocoder.arcgis 
  
-Secondly, I use the above data, including suburb name, postcode and coordinate to find surrounding venues of each suburb in the City of Newcastle. I took advantage of FourSquare data. I applied the k-mean clustering algorithm to achieve the group of suburbs, sharing similarities and further helps me to determine the living lifestyle of each group of suburbs. 
+**Secondly**, I use the above data, including suburb name, postcode and coordinate to find surrounding venues of each suburb in the City of Newcastle. I took advantage of FourSquare data. I applied the k-mean clustering algorithm to achieve the group of suburbs, sharing similarities and further helps me to determine the living lifestyle of each group of suburbs. 
 
-Thirdly, the data of property price only cover 28 out of 51 suburbs in the area. In order to have a complete indicator of how expensive it is to rent or buy a property in every suburb I need to interpolate the data of the missing values of the rest 23 suburbs. I made the assumption that the missing property price of each suburb is the average of the available price of the neighbouring suburbs. In order to identify the list of neighbours of each suburb, I take advantage of the package geopandas to read spatial data with Python. The neighbours of each suburbs are those who share the polygon borders and are then store in the relevant dataframe for further access. 
+**Thirdly**, the data of property price only cover 28 out of 51 suburbs in the area. In order to have a complete indicator of how expensive it is to rent or buy a property in every suburb I need to interpolate the data of the missing values of the rest 23 suburbs. I made the assumption that the missing property price of each suburb is the average of the available price of the neighbouring suburbs. In order to identify the list of neighbours of each suburb, I take advantage of the package geopandas to read spatial data with Python. The neighbours of each suburbs are those who share the polygon borders and are then store in the relevant dataframe for further access. 
 
-Fourthly, I need to extract the complete list of all primary schools in every suburb in the City of Newcastle. I currently have 51 suburbs. The whole manual process to fill in the search box with suburb name and then get the results list is long and might generate unnecessary errors, so I decided to automate the process. I took advantage of the package selenium in Python to create a driver of the Firefox browser that provides me with a way to automatically fill the search box with all suburbs and get the complete result without any manual work. 
+**Fourthly**, I need to extract the complete list of all primary schools in every suburb in the City of Newcastle. I currently have 51 suburbs. The whole manual process to fill in the search box with suburb name and then get the results list is long and might generate unnecessary errors, so I decided to automate the process. I took advantage of the package selenium in Python to create a driver of the Firefox browser that provides me with a way to automatically fill the search box with all suburbs and get the complete result without any manual work. 
 
 ## 4. Results
 
+**Firstly**, I achieved the dataframe containing name of suburb, corresponding postcode, latitude and longitude of 51 suburbs in the City of Newcastle. The first five rows of the dataframe is shown in Figure 1. 
 
-Living in Australia, I found the major proportion of living cost comes from rent. To my surprise, there is no complete data of property price in every suburb in the City of Newcastle. 
+![Suburb](https://www.dropbox.com/s/g9by7k8m310vdty/1-Suburbs.png?raw=1 "Suburbs in Newcastle")
+Figure 1. First five suburbs in the City of Newcastle. 
 
-![suburb](https://www.dropbox.com/s/g9by7k8m310vdty/1-Suburbs.png?raw=1 "Suburbs in Newcastle")
+Based on the generated coordinate of each suburb and postcode, I plot the map of the City of Newcastle with each marker representing each postcode suburb in Figure 2. Please note that there are several suburbs assigned with the same postcode. 
+
+![NewMap](https://www.dropbox.com/s/gus61m77kaneyix/2-NewcastleMap.png??raw=1 "Map of Newcastle") 
+
+**Secondly**, I got the 
+
+
 
 Based on my own judgement and experience living in Newcastle, I am surprised by how good the results yielded by the algorithm. It also proves that data generated from FourSquare are adequate. The whole process helps me to narrow down the list of potential suburbs that meet my criteria. 
 
