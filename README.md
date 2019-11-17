@@ -55,8 +55,28 @@ Figure 2. Map of City of Newcastle with suburbs.
 
 Figure 3. First five suburbs with top ten popular venues. 
 
+The dataframe which contains venues of suburbs in the region was grouped by each suburb. This data was passed applied with k-means clustering algorithm. The number of clusters was set to 6. The map of City of Newcastle was then mapped again with 6 clusters of suburbs (shown in Figure 4). 
 
+![Clusters](https://www.dropbox.com/s/wo50wxuyxkufqyi/4-Clusters.png?raw=1 "Clusters of Suburbs") 
+
+Figure 4. Map of City of Newcastle with six clusters of suburbs
 
 Based on my own judgement and experience living in Newcastle, I am surprised by how good the results yielded by the algorithm. It also proves that data generated from FourSquare are adequate. The whole process helps me to narrow down the list of potential suburbs that meet my criteria. 
+
+Cluster 2 and 5 include those suburbs which are far away from the city centre. There are not much dynamic activities in these areas. The most popular venues are train stations, fish & chips shop, fast food restaurants. 
+
+Cluster 0 includes 8 suburbs and Cluster 4 includes 13 suburbs located in the north western part of the City of Newcastle. The areas are popular among students who are studying in the Callaghan campus at the University of Newcastle. The most popular venues in these areas are convenience stores, supermarkets, coffee shop and gas stations. I consider the suburbs in the two clusters are better than the two previous ones. 
+
+The last two, cluster 1 and cluster 3, cover the suburbs which I prefer to relocate in the future. The suburbs have more dynamic lifestyle in which we as family can enjoy and further understand more local culture. The suburbs are close to beach, pool area. There are lots of park and playgrounds nearby for children. People living in these suburbs can also easily access to multiple facilities such as gym, grocery, supermarket, cafe, coffee shop and range of restaurants. In certain suburbs, multiplex for accommodation is also identify popular which give varying options to live with competitive prices. 
+
+Suburbs of cluster 1 and 3 are then combined together with most 10 common venues are stored in a dataframe to further examine. 
+
+
+
+
+
+
+
+
 
 Based on all the data that I collected and analyzed, I can filter the data based on my certain criteria. The filtering procedure yields a list of potential suburbs that I prefer to relocate in the near future. I hope this work will help other determining which suburb in the City of Newcastle to move in.
