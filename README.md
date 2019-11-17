@@ -110,7 +110,16 @@ I further closely examine the result and prioritize the suburbs I would like to 
 4. New Lambton
 5. Hamilton
 
+## 5. Discussion 
 
+There are many factors that people move into new country or region consider where they should leave. I myself as an international student who live in Newcastle with a small family has also given lots of thought on this issue. We would love to have a balance life between work and family, between current income and living cost, between time for ourselves and time for family. In this project, I consider the three factors that matter the most to me. However I believe each person as their own preference and consider different issues as well. 
 
+One problem of this project is that I only consider the median price to make decision whether I can afford to rent or buy (in the future) the property in the suburb. However, in reality the range of property price can range far away from the median indicator. Purely basing on the median price can cross out several other potential suburbs that might meet my expectation in the future. 
 
-Based on all the data that I collected and analyzed, I can filter the data based on my certain criteria. The filtering procedure yields a list of potential suburbs that I prefer to relocate in the near future. I hope this work will help other determining which suburb in the City of Newcastle to move in.
+Other problem of this project is related to the fact that living in a suburb does not guarantee that you can have your childrent going to 'best' school in that area. The location of the property in that suburb also matters in case the suburb is large and there are several schools in the area. 
+
+One more thing related to school that I also need to consider is to have my children to go to private school. In that case no matter where I live, as long as I can pay the tuition fee, I can have my son study in the private school. In the future I can further examine the tuition fee of different private schools in Newcastle to have more options in the future. 
+
+## 6. Conclusion
+
+In this project, I aim to find out the most potential suburbs that are worth to live in the City of Newcastle. I have three specific criteria: i). dynamic lifestyle ii). property price is not too expensive iii.) good primary school located in the area. I collected relevant data from scratch and crunched the data to answer my question. The procedure yields a list of potential suburbs that I prefer to relocate includes Tighes Hill, Kotara, Adamstown, New Lambton and Hamilton. I hope this work will help other determining which suburb in the City of Newcastle to move in, particularly for those who recently made their move or currently consider leaving for Newcastle. 
