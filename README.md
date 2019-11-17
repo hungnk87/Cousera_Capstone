@@ -49,7 +49,11 @@ Based on the generated coordinate of each suburb and postcode, I plot the map of
 
 Figure 2. Map of City of Newcastle with suburbs. 
 
-**Secondly**, I got the 
+**Secondly**, I created a function to get all nearby venues based on the provided coordinate and the set distance, which is in this case 4 kilometers. The functions is passed to all suburbs and the corresponding location. Based on the results of the Foursquare inquiry data, the list of ten most common venues are listed for each suburb (shown in Figure 3). 
+
+![TenVenues](https://www.dropbox.com/s/dae0u2wwngongkj/3-topTenVenues.png?raw=1 "Top 10 Venues") 
+
+Figure 3. First five suburbs with top ten popular venues. 
 
 
 
